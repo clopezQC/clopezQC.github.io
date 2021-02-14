@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>follow along</title>
+
+    <script
+    >
+        function changeA() {
+
+            html = "<p>some sassy message. Your answer is:</p><img src='tyn.jpg'>";
+            document.getElementById("content").innerHTML = html;
+
+        }
+
+        function changeB() {
+
+            html = "<p>another sassy message. Your answer is:</p><img src='000000.PNg'>";
+            document.getElementById("content").innerHTML = html;
+
+}
+
+        function changeC() {
+            console.log('we are here')
+        }
+    </script>
+
+    <style>
+        .answer {
+            background: red;
+        }
+        #content {
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Follow along</h1>
+    <button onclick="changeA()">Click A</button>
+    <button onclick="changeB()">Click B</button>
+    <button onclick="changeC()">Click C</button>
+
+
+<div class="answer">
+    <h3>Answer</h3>
+
+<div id="content">
+   
+        
+</div>
+</div>
+
+</body>
+</html>
