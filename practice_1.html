@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Practice HTML</title>
+
+    <script>
+        function changeA() {
+
+            result = "<p>Great choice! Your result is:</p><img src='tyn.jpg'>";
+            document.getElementById("result").innerHTML = result;
+
+        }
+
+        function changeB() {
+
+            result = "<p>Another great choice! Your result is:</p><img src='000000.png'>";
+            document.getElementById("result").innerHTML = result;
+
+}
+
+        function changeC() {
+
+            result = "<p>Check the console log for a <em>secret</em> message!</em></p>";
+            document.getElementById("result").innerHTML = result;
+
+            console.log('Javascript is awesome!')
+        }
+    </script>
+
+    <style>
+        img { 
+                width: 300px; 
+                height: 300px; 
+            } 
+
+        .introSect {
+            background: Thistle;   
+            }
+
+        .resultTitle {
+            background: pink;
+        }
+
+        #result {
+            background: lightyellow;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="introSect">
+
+    <h1>Practice HTML</h1>
+    <p>Click a button to reveal a color!</p>
+
+    <button onclick="changeA()">Click A</button>
+    <button onclick="changeB()">Click B</button>
+    <button onclick="changeC()">Click C</button>
+
+  
+
+<div class="resultTitle">
+    <h3>Result</h3>
+
+<div id="result">
+   
+</div>        
+</div>
+</div>
+
+</body>
+</html>
