@@ -130,8 +130,12 @@ body {
       transform: translateY(4px);
     }
     
-    #Footr {
-        float: bottom;
-        color: black;
-        background-color: grey;
+   footer {
+     font-size: small;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
     }
