@@ -1,0 +1,137 @@
+*{
+    font-family: roboto;
+}
+
+img {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+  }
+
+h1, h2, h3 {
+   
+    color: black;
+}
+.Header {
+    color: black;
+    font-size: 43pt;
+
+    text-align: center;
+    
+}
+
+body {
+  background-color:white;
+  color: black;
+  }
+
+
+
+
+  #Choice {
+    background: lightgray;
+    float: bottom;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 1%;
+    text-align: center;
+    
+   
+    
+    
+  }
+  
+  #Results {
+    background-color:lightgrey;
+    float: top;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 300;
+    color: black;
+    
+  }
+
+
+  #resText {
+      
+      font-size: 0.5em;
+      color: black;
+  }
+
+  #cap {
+      padding: 5%;
+      color: black;
+  }
+.btns {
+    margin-top: 3em;
+
+}
+
+    /*BUTTONS*/
+    .button {
+        
+        display: inline-block;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #999;
+      }
+
+      .button:hover {
+        color: black;
+        background-color: lightgrey
+      }
+    
+    .button:active {
+      background-color: grey;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    .button2 {
+
+        position: inherit;
+        padding: 15px 25px;
+        margin-top: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: darkred;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        width:30%;
+   
+      }
+
+      .button2:hover {
+        background-color: red;
+    }
+    
+    .button2:active {
+      background-color: darkred;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    #Footr {
+        float: bottom;
+        color: black;
+        background-color: grey;
+    }
