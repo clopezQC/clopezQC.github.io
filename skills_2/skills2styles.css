@@ -72,41 +72,53 @@ body {
 }
 
     /*BUTTONS*/
-    .button {
-        
-        display: inline-block;
-        padding: 15px 20px;
-        margin-bottom: 15px;
-        margin-right: 10px;
-        font-size: 24px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-        background-color: black;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 9px #999;
-      }
 
-      .button:hover {
-        color: black;
-        background-color: lightgrey
-      }
-    
-    .button:active {
-      background-color: grey;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
+    .btn1 {
+      border: none;
+      padding: 15px 50px;
+      margin:10px 4px;
+      color: rgb(0, 0, 0);
+      /*font-family: sans-serif;*/
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      text-decoration: none;
+      display:inline-block;   
     }
     
-    .button2 {
+    .btn1::before {
+      content: '';
+      position: absolute;
+      bottom: 0%;
+      left: 0px;
+      width: 100%;
+      height: 4px;
+      background: darkred;
+      display: block;
+      -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+      transform-origin: right top;
+      -webkit-transform: scale(0, 1);
+      -ms-transform: scale(0, 1);
+      transform: scale(0, 1);
+      -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+      transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+    }
+    
+    .btn1:hover::before {
+      -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+      transform-origin: left top;
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1)
+    }
 
+    .btn2 {
         position: inherit;
         padding: 15px 25px;
         margin-top: 20px;
-        font-size: 24px;
+        font-size: 20px;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
@@ -117,25 +129,24 @@ body {
         border-radius: 15px;
         box-shadow: 0 9px #999;
         width:30%;
-   
       }
 
-      .button2:hover {
+      .btn2:hover {
         background-color: red;
     }
     
-    .button2:active {
+    .btn2:active {
       background-color: darkred;
       box-shadow: 0 5px #666;
       transform: translateY(4px);
     }
-    
+  
    footer {
-     font-size: small;
+    font-size: large;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
-    text-align: right;
+    color: black;
+    text-align: center;
     }
