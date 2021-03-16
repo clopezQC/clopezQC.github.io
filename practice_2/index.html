@@ -7,22 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Practice: Write an Object
+    <p>JS Object
     </p>
     
-    <p id="stats"></p>
+    <p id="mov1"></p>
+    <p id="mov2"></p>
     
     <script>
     var movie = {
       title: "Parasite",
       director:"Bong Joon-ho",
-      released: 2019,
+      year: 2019,
       genre: "comedy thriller",
       rating: 10/10
     };
+
+var movie2 = {
+  title: 'Joker',
+  director: 'Todd Phillips',
+  year: 2019,
+  genre: "psychological thriller",
+  rating: 2/10,
+};
     
-    document.getElementById("stats").innerHTML =
-    movie.title + " is a " + movie.genre + " released in "+ movie.released;
+    document.getElementById("mov1").innerHTML =
+    movie.title + " is a " + movie.genre + " released in "+ movie.year;
+
+    document.getElementById("mov2").innerHTML =
+    movie2.title + " is a " + movie2.genre + " released in "+ movie2.year;
+
     </script>
 </body>
 </html>
