@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Practice: Write an Object
+    </p>
+    
+    <p id="stats"></p>
+    
+    <script>
+    var movie = {
+      title: "Parasite",
+      director:"Bong Joon-ho",
+      released: 2019,
+      genre: "comedy thriller",
+      rating: 10/10
+    };
+    
+    document.getElementById("stats").innerHTML =
+    movie.title + " is a " + movie.genre + " released in "+ movie.released;
+    </script>
+</body>
+</html>
